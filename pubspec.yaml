@@ -32,8 +32,12 @@ dependencies:
   flutter:
     sdk: flutter
   google_fonts: ^2.2.0
+  image_picker: ^0.8.4+5
   phosphor_flutter: ^1.4.0
   qr_code_scanner: ^0.6.1
+  qr_flutter: ^4.0.0
+  r_scan: ^0.1.6+1
+  share: ^2.0.4
   url_launcher: ^6.0.18
 
 dev_dependencies:
@@ -58,7 +62,7 @@ flutter:
   uses-material-design: true
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets
+    - assets/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
