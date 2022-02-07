@@ -54,9 +54,13 @@ class _QrGeneratePageState extends State<QrGeneratePage> {
         SizedBox(height: 30),
         (dummyData == null || dummyData == '')
             ? Center(
-                child: Text(
-                  'Enter some text to display qr code...',
-                  style: GoogleFonts.raleway(fontSize: 23),
+                child: Padding(
+                  padding: const EdgeInsets.all(8.0),
+                  child: Text(
+                    'Enter some text to display qr code...',
+                    style: GoogleFonts.raleway(fontSize: 23),
+                    textAlign: TextAlign.center,
+                  ),
                 ),
               )
             : QrImage(

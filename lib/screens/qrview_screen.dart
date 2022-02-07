@@ -68,7 +68,6 @@ class _QRScanPageState extends State<QRScanPage> {
               child: Row(
                 mainAxisAlignment: MainAxisAlignment.start,
                 children: [
-                  //TODO: Importar imagen de dispositivo
                   IconButton(
                     onPressed: () async {
                       await controller?.toggleFlash();
@@ -113,6 +112,7 @@ class _QRScanPageState extends State<QRScanPage> {
                 ),
               ),
             ),
+            Spacer(),
             Container(
               margin: const EdgeInsets.all(8),
               child: IconButton(
@@ -135,7 +135,7 @@ class _QRScanPageState extends State<QRScanPage> {
                       return const Icon(
                         PhosphorIcons.filePlus,
                         color: Colors.blue,
-                        size: 40,
+                        size: 30,
                       );
                     } else {
                       return const Text('Loading..');

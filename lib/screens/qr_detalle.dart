@@ -75,9 +75,13 @@ class QRDetalleScreen extends StatelessWidget {
                           ),
                         ],
                       ),
-                      Text(
-                        args.data,
-                        style: GoogleFonts.raleway(fontSize: 15),
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: Text(
+                          args.data,
+                          style: GoogleFonts.raleway(fontSize: 15),
+                          textAlign: TextAlign.center,
+                        ),
                       ),
                       const SizedBox(height: 20),
                     ],
