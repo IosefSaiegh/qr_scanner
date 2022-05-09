@@ -5,9 +5,13 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
    
    <application
-        android:label="QR Scanner"
+        android:label="Qr Scanner"
         android:name="${applicationName}"
-        android:icon="@mipmap/launcher_icon">
+        android:icon="@mipmap/launcher_icon"
+        android:requestLegacyExternalStorage="true">
+        <meta-data
+            android:name="com.google.android.gms.ads.APPLICATION_ID"
+            android:value="ca-app-pub-5614231101856807~3380610723"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
